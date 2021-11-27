@@ -23,7 +23,7 @@ from translation import Translation
 
 from hachoir.metadata import extractMetadata
 from hachoir.parser import createParser
-from helper_funcs.display_progress import progress_for_pyrogram, humanbytes, TimeFormatter
+from functions.display_progress import progress_for_pyrogram, humanbytes, TimeFormatter
 
 
 async def ddl_call_back(bot, update):
