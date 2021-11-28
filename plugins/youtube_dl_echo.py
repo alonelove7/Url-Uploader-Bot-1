@@ -26,8 +26,8 @@ from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 from pyrogram.errors import UserNotParticipant, UserBannedInChannel
 from database.database import *
-from helper_funcs.display_progress import humanbytes
-from helper_funcs.help_uploadbot import DownLoadFile
+from functions.display_progress import humanbytes
+from functions.upload_bot import DownLoadFile
 
 from hachoir.metadata import extractMetadata
 from hachoir.parser import createParser
@@ -286,7 +286,7 @@ async def echo(bot, update):
         thumb_image_path = Config.DOWNLOAD_LOCATION + "/" + str(update.from_user.id) + ".jpg"
 
         if not os.path.exists(thumb_image_path):
-            mes = await thumb(update.from_user.id)
+            mes = await sthumb(update.from_user.id)
             if mes != None:
                 m = await bot.get_messages(update.chat.id, mes.msg_id)
                 await m.download(file_name=thumb_image_path)
