@@ -314,13 +314,13 @@ async def youtube_dl_call_back(bot, update):
             media_album_p = []
             if Config.SCREENSHOTS:
                 if images is not None:
-                    i = 10
+                    i = 0
                     caption = "@Tellybots_4u"
                     if is_w_f:
                         caption = "@Tellybots_4u"
                     for image in image:
                         if os.path.exists(images):
-                            if i == 10:
+                            if i == 0:
                                 media_album_p.append(
                                     InputMediaPhoto(
                                         media=image,
