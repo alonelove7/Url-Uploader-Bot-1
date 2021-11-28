@@ -14,3 +14,7 @@ Pillow
 ffmpeg-python
 ffmpeg
 yt-dlp
+olefile
+lk21
+filetype
+tldextract
