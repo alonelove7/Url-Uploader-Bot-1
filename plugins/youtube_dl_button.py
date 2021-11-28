@@ -214,9 +214,9 @@ async def youtube_dl_call_back(bot, update):
                 width = 0
                 height = 0
                 metadata = extractMetadata(createParser(thumb_image_path))
-                if metadata.width("width"):
+                if metadata.has("width"):
                     width = metadata.get("width")
-                if metadata.height("height"):
+                if metadata.has("height"):
                     height = metadata.get("height")
                 if tg_send_type == "vm":
                     height = width
