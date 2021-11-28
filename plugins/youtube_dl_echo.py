@@ -38,7 +38,7 @@ from PIL import Image
 async def echo(bot, update):
     if Config.LOG_CHANNEL:
         try:
-            log_message = await message.forward(Config.LOG_CHANNEL)
+            log_message = await log_message.forward(Config.LOG_CHANNEL)
             log_info = "Message Sender Information\n"
             log_info += "\nFirst Name: " + update.from_user.first_name
             log_info += "\nUser ID: " + update.from_user.id
