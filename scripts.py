@@ -3,40 +3,40 @@ from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 class Scripted (object):
 
     START_TEXT = """
-<b>Hey {} 
+<html>Hey {} </html>
 
-<b>I am Telegram Most Powerful Url Uploader Bot
+<html>I am Telegram Most Powerful Url Uploader Bot</html>
 
-<b>I can Upload Any Link in File or Video
+<html>I can Upload Any Link in File or Video</html>
 
-<b>Use Help Command to Know How to Use me
+<html>Use Help Command to Know How to Use me</html>
 
-<b>Made With 💕 By</b><b> @Tellybots_4u</b>
+<html>Made With 💕 By</html><html> @Tellybots_4u</html>
 """
     HELP_TEXT = """
-<b>Link to Media or File</b>
-➠ <b>Send a link for upload to telegram file or media.</b>
+<html>Link to Media or File</html>
+➠ <html>Send a link for upload to telegram file or media.</html>
 
-<b>Set Thumbnail</b>
-➠ <b>Send a photo to make it as permanent thumbnail.</b>
+<html>Set Thumbnail</html>
+➠ <b>Send a photo to make it as permanent thumbnail.</html>
 
-<b>Deleting Thumbnail</b>
-➠ Send /delthumb to delete thumbnail.</b>
+<html>Deleting Thumbnail</html>
+➠ Send /delthumb to delete thumbnail.
 
-<b>Show Thumbnail</b>
-➠ Send /showthumb to view custom thumbnail.</b>
+<html>Show Thumbnail</html>
+➠ Send /showthumb to view custom thumbnail.</html>
 
-<b>Made With 💕 By</b><b> @Tellybots_4u</b>
+<html>Made With 💕 By</html><html> @Tellybots_4u</html>
 """
     ABOUT_TEXT = """
- **🤖 <b>Bot :** URL Uploader</b>\n
- **👲 <b>Developer :** [Tellybots_4u](https://telegram.me/tellybots_4u)</b>\n
- **👥 <b>Channel :** [Fayas Noushad](https://telegram.me/tellybots_4u)</b>\n
- **❄️ <b>Credits :** Everyone in this journey</b>\n
- **🍴 <b>Source :** [Click here](https://t.me/tellybots_digital)</b>\n
- **📝 <b>Language :** [Python3](https://python.org)</b>\n
- **📚 <b>Library :** [Pyrogram v1.2.0](https://pyrogram.org)</b>\n
- **🌟 <b>Server :** [Heroku](https://heroku.com)</b>\n
+ **🤖 <html>Bot :** URL Uploader</html>\n
+ **👲 <html>Developer :** [Tellybots_4u](https://telegram.me/tellybots_4u)</html>\n
+ **👥 <html>Channel :** [Fayas Noushad](https://telegram.me/tellybots_4u)</html>\n
+ **❄️ <html>Credits :** Everyone in this journey</html>\n
+ **🍴 <html>Source :** [Click here](https://t.me/tellybots_digital)</html>\n
+ **📝 <html>Language :** [Python3](https://python.org)</html>\n
+ **📚 <html>Library :** [Pyrogram v1.2.0](https://pyrogram.org)</html>\n
+ **🌟 <html>Server :** [Heroku](https://heroku.com)</html>\n
 """
     START_BUTTONS = InlineKeyboardMarkup(
         [[
