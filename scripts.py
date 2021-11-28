@@ -87,5 +87,4 @@ class Scripted (object):
     JOIN_NOW_TEXT = "<code>𝕱𝖎𝖗𝖘𝖙 𝕵𝖔𝖎𝖓 𝕸𝖞 𝖀𝖕𝖉𝖆𝖙𝖊𝖘 𝕮𝖍𝖆𝖓𝖓𝖊𝖑 𝕿𝖔 𝖀𝖘𝖊 𝕸𝖊𝖍</code>"
     REPLY_TO_FILE = "<i>𝐑𝐞𝐩𝐥𝐲 𝐭𝐨 𝐭𝐡𝐚𝐭 𝐟𝐢𝐥𝐞 𝐰𝐢𝐭𝐡 /rename 𝐧𝐞𝐰 𝐧𝐚𝐦𝐞 .𝐞𝐱𝐭</i>"
     CONTACT_MY_DEVELOPER = "<i>Something Wrong Contact in Support Group @TeleRoid14 😑</i>"
-
     UPGRADE_TEXT = "<b>To upgrade your subscription <a href='https://t.me/TeleRoid14'>[ 𝐂𝐥𝐢𝐜𝐤 𝐇𝐞𝐫𝐞 ]</a></b>"
