@@ -21,7 +21,7 @@ from hachoir.metadata import extractMetadata
 from pyrogram.types import InputMediaPhoto
 
 from translation import Translation
-from functions.help_Nekmo_ffmpeg import generate_screen_shots
+from functions.nekmo_ffmpeg import generate_screen_shots
 from functions.display_progress import progress_for_pyrogram, humanbytes
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 from PIL import Image
