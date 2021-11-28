@@ -3,7 +3,7 @@ from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 class Scripted (object):
 
 
-    )
+
     PROGRESS_DIS = """\n
 ╭───[**🦚 By @Tellybots_4u**]───⍟
 │<b>📁 : {1} | {2}</b>\n
