@@ -257,7 +257,7 @@ async def youtube_dl_call_back(bot, update):
                     # performer=response_json["uploader"],
                     # title=response_json["title"],
                     # reply_markup=reply_markup,
-                    sthumb=thumb_image_path,
+                    thumb=thumb_image_path,
                     reply_to_message_id=update.message.reply_to_message.message_id,
                     progress=progress_for_pyrogram,
                     progress_args=(
@@ -270,7 +270,7 @@ async def youtube_dl_call_back(bot, update):
                 await bot.send_document(
                     chat_id=update.message.chat.id,
                     document=download_directory,
-                    sthumb=thumb_image_path,
+                    thumb=thumb_image_path,
                     caption=description,
                     parse_mode="HTML",
                     # reply_markup=reply_markup,
@@ -288,7 +288,7 @@ async def youtube_dl_call_back(bot, update):
                     video_note=download_directory,
                     duration=duration,
                     length=width,
-                    sthumb=thumb_image_path,
+                    thumb=thumb_image_path,
                     reply_to_message_id=update.message.reply_to_message.message_id,
                     progress=progress_for_pyrogram,
                     progress_args=(
@@ -308,7 +308,7 @@ async def youtube_dl_call_back(bot, update):
                     height=height,
                     supports_streaming=True,
                     # reply_markup=reply_markup,
-                    sthumb=thumb_image_path,
+                    thumb=thumb_image_path,
                     reply_to_message_id=update.message.reply_to_message.message_id,
                     progress=progress_for_pyrogram,
                     progress_args=(
