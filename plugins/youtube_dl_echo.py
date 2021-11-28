@@ -27,7 +27,7 @@ from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 from pyrogram.errors import UserNotParticipant, UserBannedInChannel
 from database.database import *
 from functions.display_progress import humanbytes
-from functions.uploadbot import DownLoadFile
+from functions.upload_bot import DownLoadFile
 
 from hachoir.metadata import extractMetadata
 from hachoir.parser import createParser
