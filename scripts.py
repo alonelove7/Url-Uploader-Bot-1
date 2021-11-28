@@ -3,15 +3,15 @@ from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 class Scripted (object):
 
     START_TEXT = """
-<html>Hey {} </html>
+<html>Hey {} <html></html>
 
-<html>I am Telegram Most Powerful Url Uploader Bot</html>
+<html>I am Telegram Most Powerful Url Uploader Bot.</html>
 
-<html>I can Upload Any Link in File or Video</html>
+<html>I can Upload Any Link in File or Video.</html>
 
-<html>Use Help Command to Know How to Use me</html>
+<html>Use Help Command to Know How to Use me.</html>
 
-<html>Made With 💕 By</html><html> @Tellybots_4u</html>
+<html>Made With 💕 By</html><html> @Tellybots_4u.</html>
 """
     HELP_TEXT = """
 <html>Link to Media or File</html>
