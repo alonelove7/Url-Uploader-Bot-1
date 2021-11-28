@@ -319,8 +319,8 @@ async def youtube_dl_call_back(bot, update):
                     if is_w_f:
                         caption = ""
                     for image in images:
-                        if os.path.exists(image):
-                            if i == 0:
+                        if os.path.exists(images):
+                            if i == 10:
                                 media_album_p.append(
                                     InputMediaPhoto(
                                         media=image,
