@@ -29,5 +29,5 @@ async def start(bot, update):
           chat_id=update.chat.id,
           text=Scripted.START_TEXT,
           parse_mode="html",
-          disable_web_page_preview=True,
-          reply_markup=Scripted.START_BUTTONS
+          disable_web_page_preview=True
+         
