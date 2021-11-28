@@ -24,39 +24,17 @@ from pyrogram import Client as Clinton
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 
-
-@Clinton.on_message(filters.command(["start"]))
+@Clinton.on_message(
+    filters.command(["start"]) &
+    filters.private &
+    filters.user(Config.AUTH_USERS) if Config.PRIVATE else None
+)
 async def start(bot, update):
-          await bot.send_message(
-          chat_id=update.chat.id,
-          text=Scripted.START_TEXT,
-          parse_mode="html",
-          disable_web_page_preview=True,
-          reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton(text='⭕ ᴄʜᴀɴɴᴇʟ ⭕', url=f'https://t.me/{Config.UPDATE_CHANNEL}'),
-                                                 InlineKeyboardButton(text='⭕ sᴜᴘᴘᴏʀᴛ ⭕', url=f'https://t.me/{Config.UPDATE_GROUP}') ],
-                                               [ InlineKeyboardButton(text='🔐 ᴄʟᴏꜱᴇ 🔐', callback_data='DM') ] ] ) )
-
-
-
-@Clinton.on_message(filters.command(["help"]))
-async def helpme(bot, update):
-          await bot.send_message(
-          chat_id=update.chat.id,
-          text=Scripted.HELP_TEXT,
-          parse_mode="html",
-          disable_web_page_preview=True,
-          reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton(text='🔐 ᴄʟᴏꜱᴇ', callback_data='DM') ] ] ) )
-
-
-
-@Clinton.on_message(filters.command(["about"]))
-async def abot(bot, update):
-          await bot.send_message(
-          chat_id=update.chat.id,
-          text=Scripted.ABOUT_TEXT,
-          parse_mode="html",
-          disable_web_page_preview=True,
-          reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton(text='ᴄʟᴏꜱᴇ 🔐', callback_data='DM') ] ] ) )
+    await update.reply_text(
+        text=Translation.START_TEXT.format(update.from_user.mention),
+        disable_web_page_preview=True,
+        reply_markup=Translation.START_BUTTONS
+    )
 
 
 
