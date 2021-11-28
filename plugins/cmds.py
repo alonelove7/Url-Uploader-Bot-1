@@ -38,19 +38,4 @@ async def start(bot, update):
 
 
 
-@Clinton.on_message(filters.command(["upgrade"]))
-async def upgra(bot, update):
-          await bot.send_message(
-          chat_id=update.chat.id,
-          text=Scripted.UPGRADE_TEXT,
-          parse_mode="html",
-          disable_web_page_preview=True,
-          reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton(text='🔐 ᴄʟᴏꜱᴇ', callback_data='DM') ] ] ) )
 
-
-
-@Clinton.on_callback_query()
-async def button(bot, update):
- 
-      if  'DM'  in update.data:
-                await update.message.delete()
