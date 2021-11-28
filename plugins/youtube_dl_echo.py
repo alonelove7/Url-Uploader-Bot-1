@@ -26,8 +26,8 @@ from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 from pyrogram.errors import UserNotParticipant, UserBannedInChannel
 from database.database import *
-from helper_funcs.display_progress import humanbytes
-from helper_funcs.help_uploadbot import DownLoadFile
+from functions.display_progress import humanbytes
+from functions.help_uploadbot import DownLoadFile
 
 from hachoir.metadata import extractMetadata
 from hachoir.parser import createParser
