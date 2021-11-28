@@ -1,2 +1,2 @@
-### 📝🗂️ Telegram Best Url Uploader Bot
+### 🗂️ Telegram Best Url Uploader Bot
 
