@@ -30,11 +30,12 @@ from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
     filters.user(Config.AUTH_USERS) if Config.PRIVATE else None
 )
 async def start(bot, update):
-    await update.reply_text(
-        text=Scripted.START_TEXT.format(update.from_user.mention),
-        disable_web_page_preview=True,
-        reply_markup=Scripted.START_BUTTONS
-    )
+              await bot.send_message(
+          chat_id=update.chat.id,
+          text=Scripted.START_TEXT,
+          parse_mode="html",
+          disable_web_page_preview=True,
+          reply_markup=Scripted.START_BUTTONS
 
 
 
