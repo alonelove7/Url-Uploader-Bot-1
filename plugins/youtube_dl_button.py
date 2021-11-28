@@ -34,7 +34,7 @@ from hachoir.metadata import extractMetadata
 from hachoir.parser import createParser
 # https://stackoverflow.com/a/37631799/4723940
 from PIL import Image
-from functions.Nekmo_ffmpeg import generate_screen_shots
+from functions.nekmo_ffmpeg import generate_screen_shots
 
 
 async def youtube_dl_call_back(bot, update):
@@ -325,9 +325,9 @@ async def youtube_dl_call_back(bot, update):
             media_album_p = []
             if images is not None:
                 i = 0
-                caption = "© @xTeamBots"
+                caption = "© @Tellybots_4u"
                 if is_w_f:
-                    caption = "@xurluploaderbot"
+                    caption = "@Tellybots_4u"
                 for image in images:
                     if os.path.exists(str(image)):
                         if i == 0:
