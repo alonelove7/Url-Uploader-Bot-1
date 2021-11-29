@@ -243,7 +243,7 @@ async def youtube_dl_call_back(bot, update):
                     )
                 )
             elif tg_send_type == "video":
-                 width, height, duration = await bot_(download_directory)
+                 width, height, duration = await bot_send_video(download_directory)
                  thumbnail = await Gthumb02(bot, update, duration, download_directory)
                  await bot.send_video(
                     chat_id=update.message.chat.id,
