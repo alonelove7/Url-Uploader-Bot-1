@@ -210,27 +210,7 @@ async def youtube_dl_call_back(bot, update):
                     if metadata.has("duration"):
                         duration = metadata.get('duration').seconds
 
-            if os.path.exists(thumb_image_path):
-                width = 0
-                height = 0
-                metadata = extractMetadata(createParser(thumb_image_path))
-                if metadata.("width"):
-                    width = metadata.get("width")
-                if metadata.("height"):
-                    height = metadata.get("height")
-                if tg_send_type == "vm":
-                    height = width
-                Image.open(thumb_image_path).convert(
-                    "RGB").save(thumb_image_path)
-                img = Image.open(thumb_image_path)
-                if tg_send_type == "file":
-                    img.resize((320, height))
-                else:
-                    img.resize((90, height))
-                img.save(thumb_image_path, "JPEG")
-            else:
-                thumb_image_path = Config.DEF_THUMB_NAIL_VID_S
-
+            Thunbdays
             start_time = time.time()
             if tg_send_type == "audio":
                 await update.message.reply_to_message.reply_chat_action("upload_audio")
