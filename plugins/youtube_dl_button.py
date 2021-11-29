@@ -22,7 +22,7 @@ else:
     from config import Config
 # the Strings used for this "thing"
 from translation import Translation
-from plugins.thumbnail import *
+from plugins.customthumbnail import *
 logging.getLogger("pyrogram").setLevel(logging.WARNING)
 from pyrogram.types import InputMediaPhoto
 from functions.display_progress import progress_for_pyrogram, humanbytes
