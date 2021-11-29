@@ -21,8 +21,8 @@ from hachoir.metadata import extractMetadata
 from pyrogram.types import InputMediaPhoto
 
 from translation import Translation
-from helper_funcs.help_Nekmo_ffmpeg import generate_screen_shots
-from helper_funcs.display_progress import progress_for_pyrogram, humanbytes
+from functions.nekmo_ffmpeg import generate_screen_shots
+from functions.display_progress import progress_for_pyrogram, humanbytes
 
 from PIL import Image
 
@@ -100,7 +100,7 @@ async def youtube_dl_call_back(bot, update):
     command_to_exec = []
     if tg_send_type == "audio":
         command_to_exec = [
-            "youtube-dl",
+            "yt-dlp",
             "-c",
             "--max-filesize", str(Config.TG_MAX_FILE_SIZE),
             "--prefer-ffmpeg",
@@ -115,7 +115,7 @@ async def youtube_dl_call_back(bot, update):
         if "youtu" in youtube_dl_url:
             minus_f_format = youtube_dl_format + "+bestaudio"
         command_to_exec = [
-            "youtube-dl",
+            "yt-dlp",
             "-c",
             "--max-filesize", str(Config.TG_MAX_FILE_SIZE),
             "--embed-subs",
