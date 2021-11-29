@@ -26,7 +26,7 @@ class Config(object):
 
     CHUNK_SIZE = int(os.environ.get("CHUNK_SIZE", 128))
 
-    AUTH_USERS = set(int(x) for x in os.environ.get("AUTH_USERS", "").split())
+    
 
     BANNED_USERS = set(int(x) for x in os.environ.get("BANNED_USERS", "").split())
     # For private use 
