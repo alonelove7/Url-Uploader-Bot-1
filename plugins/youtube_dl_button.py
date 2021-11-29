@@ -196,9 +196,8 @@ async def youtube_dl_call_back(bot, update):
                     300,
                     9
                 )
-            try:
-                
-               await bot.edit_message_text(
+            else:
+                await bot.edit_message_text(
                 text=Translation.UPLOAD_START,
                 chat_id=update.message.chat.id,
                 message_id=update.message.message_id
