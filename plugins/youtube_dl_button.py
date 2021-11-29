@@ -210,7 +210,7 @@ async def youtube_dl_call_back(bot, update):
                     if metadata.has("duration"):
                         duration = metadata.get('duration').seconds
 
-            Thunbdays
+            
             start_time = time.time()
             if tg_send_type == "audio":
                 await update.message.reply_to_message.reply_chat_action("upload_audio")
