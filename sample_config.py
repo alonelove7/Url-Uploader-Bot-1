@@ -2,11 +2,11 @@ import os
 
 class Config(object):
 
-    TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "")
+    TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "niii21")
 
-    APP_ID = int(os.environ.get("APP_ID", 12345))
+    APP_ID = int(os.environ.get("APP_ID", "16612056"))
     
-    API_HASH = os.environ.get("API_HASH")
+    API_HASH = os.environ.get("API_HASH", "ae32caf162207865ff93b9b931b2ba54")
 
     OUO_IO_API_KEY = ""
 
@@ -18,11 +18,11 @@ class Config(object):
 
     DOWNLOAD_LOCATION = "./DOWNLOADS"
 
-    DB_URI = os.environ.get("DATABASE_URL", "")
+    DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://king:139715202Aa@cluster0.4lzzm.mongodb.net/?retryWrites=true&w=majority")
 
-    UPDATE_GROUP = os.environ.get("UPDATE_GROUP", "")
+    UPDATE_GROUP = os.environ.get("UPDATE_GROUP", "yop18741564")
     
-    UPDATE_CHANNEL = os.environ.get("UPDATE_CHANNEL", "")
+    UPDATE_CHANNEL = os.environ.get("UPDATE_CHANNEL", "yop18741564")
 
     CHUNK_SIZE = int(os.environ.get("CHUNK_SIZE", 128))
 
@@ -54,25 +54,5 @@ class Config(object):
     # proxy for accessing youtube-dl in GeoRestricted Areas
     # Get your own proxy from https://github.com/rg3/youtube-dl/issues/1091#issuecomment-230163061
     HTTP_PROXY = os.environ.get("HTTP_PROXY", "")
-    
-    # Update channel for Force Subscribe
-    UPDATE_CHANNEL = os.environ.get("UPDATE_CHANNEL", None)
-    
-    # Log channel for banning spammers
-    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", None))
 
-    # maximum message length in Telegram
-    MAX_MESSAGE_LENGTH = 4096
-
-    # set timeout for subprocess
-    PROCESS_MAX_TIMEOUT = int(os.environ.get("TIME_LIMIT", 0))
-    
-    # dict to hold the ReQuest queue
-    ADL_BOT_RQ = {}
-
-    # watermark file
-    DEF_WATER_MARK_FILE = None
-
-    # Sql Database url
-    DB_URI = os.environ.get("DATABASE_URL", "")
     
